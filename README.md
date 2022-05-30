@@ -16,5 +16,7 @@ Test api key : test_api_key
 
 Выполнить комманды
 >php artisan config:cache
+
+
 >php artisan migrate:fresh --seed
 
