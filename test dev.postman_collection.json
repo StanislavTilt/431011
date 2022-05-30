@@ -31,7 +31,8 @@
 								{
 									"key": "search_data[name]",
 									"value": "p",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "sort[created_at]",
@@ -41,16 +42,24 @@
 								{
 									"key": "search_data[description]",
 									"value": "Esse",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "search_data[stars]",
 									"value": "2",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "category_id",
 									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "sort[stars]",
+									"value": "desc",
 									"type": "text"
 								}
 							]
