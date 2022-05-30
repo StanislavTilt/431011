@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "0ce457d0-2c00-4954-ad84-4ecb2f7b0b13",
+		"name": "test dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10522838"
+	},
+	"item": [
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search_data[name]",
+									"value": "p",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "sort[created_at]",
+									"value": "desc",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}api/items/search",
+							"host": [
+								"{{API_URL}}api"
+							],
+							"path": [
+								"items",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://abelo/",
+			"type": "string"
+		}
+	]
+}
