@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Contracts\Services\ItemsSearchServiceInterface;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SearchItemsRequest;
+use App\Http\Resources\ItemsResource;
 use Illuminate\Http\Request;
 
 /**
@@ -30,6 +31,6 @@ class ItemsController extends Controller
      */
     public function search(SearchItemsRequest $request)
     {
-        return $this->service->search($request->validated());
+        return ItemsResource::collection($this->service->search($request->validated()));
     }
 }

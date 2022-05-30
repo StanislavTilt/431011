@@ -18,7 +18,8 @@ class ItemFactory extends Factory
     {
         return [
             'name' => $this->faker->title,
-            'description' => $this->faker->text(200)
+            'description' => $this->faker->text(200),
+            'stars' => rand(1,5)
         ];
     }
 }

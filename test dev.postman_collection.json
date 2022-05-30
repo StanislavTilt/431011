@@ -31,14 +31,22 @@
 								{
 									"key": "search_data[name]",
 									"value": "p",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "sort[created_at]",
 									"value": "desc",
-									"type": "text",
-									"disabled": true
+									"type": "text"
+								},
+								{
+									"key": "search_data[description]",
+									"value": "Esse",
+									"type": "text"
+								},
+								{
+									"key": "search_data[stars]",
+									"value": "2",
+									"type": "text"
 								},
 								{
 									"key": "category_id",
@@ -58,7 +66,105 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "search",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search_data[name]",
+											"value": "p",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "sort[created_at]",
+											"value": "desc",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}api/items/search",
+									"host": [
+										"{{API_URL}}api"
+									],
+									"path": [
+										"items",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 May 2022 19:06:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "764"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=120, max=1000"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Dr.\",\n            \"description\": \"Voluptatem voluptate at in sed. Maiores doloremque rem perferendis eum. Ut unde animi modi sed qui. Et itaque quam nam culpa.\",\n            \"created_at\": \"2022-05-30T15:14:12.000000Z\",\n            \"updated_at\": \"2022-05-30T15:14:12.000000Z\",\n            \"categories\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Mr.\",\n                    \"key\": \"DimGrey\",\n                    \"created_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"updated_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"pivot\": {\n                        \"item_id\": 1,\n                        \"category_id\": 1\n                    }\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"Prof.\",\n                    \"key\": \"Green\",\n                    \"created_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"updated_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"pivot\": {\n                        \"item_id\": 1,\n                        \"category_id\": 2\n                    }\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"Dr.\",\n                    \"key\": \"Darkorange\",\n                    \"created_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"updated_at\": \"2022-05-30T15:14:12.000000Z\",\n                    \"pivot\": {\n                        \"item_id\": 1,\n                        \"category_id\": 3\n                    }\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
 				}
 			]
 		}
