@@ -7,6 +7,10 @@ Postman collection : test dev.postman_collection.json
 
 Test api key : test_api_key
 
+Так же доку можно глянуть по ссылке
+
+https://documenter.getpostman.com/view/10522838/Uz5Doc1T
+
 # Развертывание
 
 Выполнить комманды
@@ -14,7 +18,7 @@ Test api key : test_api_key
 
 Создать файл .env с данными от локал сервера
 
-Выполнить комманды
+Выполнить комманды  
 >php artisan config:cache
 
 
